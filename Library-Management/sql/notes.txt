@@ -1,0 +1,178 @@
+//Use these commands in mysql command line to ensure minimum working.
+//Use only admin login for book database related ops. Cust login WiP, only welcome screen works.
+//Can add Book and show book, Issue WiP
+//Book values need some fixing, adding manually currently
+
+create database libraryDB;
+
+use libraryDB;
+
+create table librarianlogin(lId varchar(30),lpass varchar(30));
+insert into librarianlogin values('Jatin1','jatin');
+insert into librarianlogin values('Shail1','shail');
+insert into librarianlogin values('Parth1','parth');
+insert into librarianlogin values('Ankit1','ankit');
+
+ create table book(bookId  int(11) ,title  varchar(50),price float(7,2),author varchar(30),grade float(5), quantity int);
+
+insert into book values(1,'Wuthering Heights',500,'Emily Brontë',3.8,15);
+
+insert into book values(2,'Pride and Prejudice',200,’Jane Austen',4.24,15);
+
+insert into book values(3,'Jane Eyre',500,'William Golding',3.65,15);
+
+insert into book values(4,'Lord of the Flies',550,'Jane Austen',4.10,15);
+
+insert into book values(5,'Harry Potter and the Goblet of Fire',750,' J.K. Rowling',4.54,15);
+
+insert into book values(6,'Persuasion',650,'Jane Austen',4.13,15);
+
+insert into book values(7,'Harry Potter and the Chamber of Secrets',475,' J.K. Rowling',4.54,15);
+
+insert into book values(8,'Harry Potter and the Sorcerer's Stone',350,'J.K. Rowling',4.57,15);
+
+insert into book values(9,'Harry Potter and the Prisoner of Azkaban',850,'J.K. Rowling',4.45,15);
+
+insert into book values(10,'Harry Potter and the Order of the Phoenix',685,'J.K. Rowling',4.1,15);
+
+insert into book values(11,'Brave New World ',285,'Aldous Huxley',3.97,15);
+
+insert into book values(12,'Harry Potter and the Half-Blood Prince',780,'J.K. Rowling',4.55,15);
+
+insert into book values(13,'Romeo and Juliet',500,'William Shakespeare',3.74,15);
+
+insert into book values(14,'The Picture of Dorian Gray'',500,' Oscar Wilde‘,4.24,15);
+insert into book values(15,'The Tales of Beedle the Bard',350,'J.K. Rowling',3.24,15);
+
+insert into book values(16,'Fantastic Beasts and Where to Find Them',280,'J.K. Rowling',4.14,15);
+
+insert into book values(17,'The Casual Vacancy ',580,'J.K. Rowling',3.84,15);
+
+insert into book values(18,'Quidditch Through the Ages ‘,599,'J.K. Rowling',3.44,15);
+
+insert into book values(19,'Hogwarts: An Incomplete and Unreliable Guide ',590,'J.K. Rowling',3.56,15);
+
+insert into book values(20,'Short Stories from Hogwarts of Power, Politics and Pesky Poltergeists',550,'J.K. Rowling',3.64,15);
+
+insert into book values(21,'Ilvermorny School of Witchcraft and Wizardry ',650,'J.K. Rowling',4.33,15);
+
+insert into book values(22,'Harry Potter: Magical Skies: Enchanted Scene with Transfers ',500,'J.K. Rowling',4.24,15);
+
+insert into book values(23,'Harry Potter: Night Journey ',510,'J.K. Rowling',3.53,15);
+
+insert into book values(24,'Fantastic Beasts: The Crimes of Grindelwald ',600,'J.K. Rowling',4.11,15);
+
+insert into book values(25,'Hamlet ',620,'William Shakespeare',3.44,15);
+
+insert into book values(26,'Macbeth',700,'William Shakespeare',3.84,15);
+
+insert into book values(27,'A Midsummer Night's Dream ',900,'William Shakespeare',3.74,15);
+
+insert into book values(28,'Much Ado About Nothing ',650,'William Shakespeare',3.46,15);
+
+insert into book values(29,'King Lear',610,'William Shakespeare',3.48,15);
+
+insert into book values(30,'The Tempest ',450,'William Shakespeare',4.44,15);
+
+insert into book values(31,'Twelfth Night-',300,'William Shakespeare',3.64,15);
+
+insert into book values(32,'Julius Caesar ',530,'William Shakespeare',3.34,15);
+
+insert into book values(33,'Sonnets ',300,'William Shakespeare',3.49,15);
+insert into book values(34,'The Shining',730,'Stephen King',3.44,15);
+
+insert into book values(35,'IT',605,'Stephen King',3.44,14);
+
+insert into book values(36,'The Stand ',200,'Stephen King',3.44,15);
+
+insert into book values(37,'The Gunslinger (The Dark Tower)',680,'Stephen King',3.44,15);
+
+insert into book values(38,'11/22/63',600,'Stephen King',3.46,15);
+
+insert into book values(39,'Carrie',450,'Stephen King',3.64,15);
+
+insert into book values(40,'Misery',610,'Stephen King',4.44,15);
+
+insert into book values(41,'Pet Sematary',700,'Stephen King',3.94,15);
+
+insert into book values(42,'Under the Dome',600,'Stephen King',3.9, 15);
+
+insert into book values(43,'Salem's Lot ',660,'Stephen King',4.4,15);
+
+insert into book values(44,'Mr. Mercedes',620,'Stephen King',3.54,15);
+
+insert into book values(45,'The Green Mile ',700,'Stephen King',4.44,15);
+
+insert into book values(46,'Cujo',560,'Stephen King',3.63,15);
+
+insert into book values(47,'Doctor Sleep ',320,'Stephen King',3.88,15);
+
+insert into book values(48,'Needful Things',450,'Stephen King',3.64,15);
+
+insert into book values(48,'Surely You're Joking, Mr. Feynman!: Adventures of a Curious Character ',450,'Richard Feynman',3.64,15);
+
+insert into book values(49,'What Do You Care What Other People Think?: Further Adventures of a Curious Character ',450,'Richard Feynman',3.64,15);
+
+insert into book values(50,'Six Easy Pieces: Essentials of Physics By Its Most Brilliant Teacher',450,'Richard Feynman',3.64,15);
+
+insert into book values(51,'QED: The Strange Theory of Light and Matter ',450,'Richard Feynman',3.64,15);
+
+
+insert into book values(52,'The Feynman Lectures on Physics ',450,'Richard Feynman',3.64,15);
+
+insert into book values(53,'The Meaning of It All: Thoughts of a Citizen-Scientist',450,'Richard Feynman',3.64,15);
+
+insert into book values(54,'The Character of Physical Law',450,'Richard Feynman',3.64,15);
+
+insert into book values(55,'The Feynman Lectures on Physics Vol 1',450,'Richard Feynman',3.64,15);
+
+insert into book values(56,'The Feynman Lectures on Physics Vol 3',450,'Richard Feynman',3.64,15);
+
+insert into book values(57,'The Feynman Lectures on Physics Vol 2',450,'Richard Feynman',3.64,15);
+
+insert into book values(58,'Classic Feynman: All the Adventures of a Curious Character ',450,'Richard Feynman',3.64,15);
+
+insert into book values(59,'Quantum Mechanics And Path Integrals',450,'Richard Feynman',3.64,15);
+
+insert into book values(60,'Quantum Electrodynamics',450,'Richard Feynman',3.64,15);
+
+insert into book values(61,'Statistical Mechanics: A Set Of Lectures',450,'Richard Feynman',3.64,15);
+
+insert into book values(62,'The Feynman Lectures on Physics Vols 4',450,'Richard Feynman',3.64,15);
+
+insert into book values(63,'The Feynman Lectures on Physics: Advanced Quantum Mechanics',450,'Richard Feynman',3.64,15);
+
+insert into book values(64,'The Feynman Lectures on Physics Vols 5-6',450,'Richard Feynman',3.64,15);
+
+insert into book values(65,'Theory Of Fundamental Processes',450,'Michael Matthews',3.64,15);
+
+insert into book values(66,'Bigger Leaner Stronger: The Simple Science of Building the Ultimate Male Body',450,'Michael Matthews',3.64,15);
+
+insert into book values(67,'Thinner Leaner Stronger: The Simple Science of Building the Ultimate Female Body',450,'Michael Matthews',3.64,15);
+
+insert into book values(68,'Beyond Bigger Leaner Stronger: The Advanced Guide to Building Muscle, Staying Lean, and Getting Strong',450,'Michael Matthews',3.64,15);
+
+insert into book values(69,'Muscle Myths: 50 Health & Fitness Mistakes You Don't Know You're Making',450,'Michael Matthews',3.64,15);
+
+insert into book values(70,'Green & Lean: 20 Vegetarian and Vegan Recipes',450,'Michael Matthews',3.64,15);
+
+insert into book values(71,'CARDIO SUCKS!!',450,'Michael Matthews',3.64,15);
+
+insert into book values(72,'The Year One Challenge for Men',450,'Michael Matthews',3.64,15);
+
+insert into book values(73,'Humble Pie',450,'Michael Matthews',3.64,15);
+
+insert into book values(74,'Gordon Ramsay's Ultimate Cookery Course',450,'Michael Matthews',3.64,15);
+
+insert into book values(75,'Cooking for Friends',450,'Michael Matthews',3.64,15);
+
+insert into book values(76,'Playing With Fire 50','Michael Matthews',3.64,15);
+
+insert into book values(77,'Ultimate Home Cooking',450,'Michael Matthews',3.64,15);
+
+insert into book values(78,'Just Desserts',450,'Michael Matthews',3.64,15);
+
+insert into book values(79,'Christmas with Gordon',450,'Michael Matthews',3.64,15);
+
+insert into book values(80,'Kitchen Heaven ',450,'Michael Matthews',3.64,15);
+

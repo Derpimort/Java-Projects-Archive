@@ -1,0 +1,50 @@
+create database test;
+
+use test;
+
+ create table customer(cname varchar(30), cId varchar(30), cpass varchar(30), cnum int, cadd varchar(30));
+
+create table book(bId int, bname varchar(30), bauthor varchar(30),bprice int,bgrade int);
+
+ create table librarian(lname varchar(30), lId varchar(30),lpass varchar(30),lemail varchar(30), lnum int);
+
+insert into librarian values('Jatin','Jatin11','J@11','jatinsaini@gmail.com',22090530);
+
+ insert into librarian values('Parth','Parth12','P@21','parthshah@gmail.com',22090530);
+
+ insert into librarian values('Shail','Shail13','S@31','shroff@gmail.com',22090530);
+
+ insert into librarian values('Ankit','Ankit14','A@41','ankitsrivastva@gmail.com',22090530);
+
+ select * from librarian;
++-------+---------+-------+--------------------------+----------+
+| lname | lId     | lpass | lemail                   | lnum     |
++-------+---------+-------+--------------------------+----------+
+| Jatin | Jatin11 | J@11  | jatinsaini@gmail.com  | 22090530 |
+| Parth | Parth12 | P@21  | parthshah@gmail.com    | 22090530 |
+| Shail | Shail13 | S@31  | shroff@gmail.com      | 22090530 |
+| Ankit | Ankit14 | A@41  | ankitsrivastva@gmail.com | 22090530 |
++-------+---------+-------+--------------------------+----------+
+
+
+
+ insert into customer values('Ashish','Ash@11','A@11',22065074,'Mumbai');
+
+insert into customer values('Tarun','Taar@11','TA@11',22072680,'Mumbai');
+
+insert into customer values('Ajinkya','Ajj@11','A@11',22071459,'Mumbai'); 
+
+insert into customer values('Rahil','Ral@11','R@11',22068959,'Mumbai');
+
+ insert into customer values('Faizan','Faz@11','Fi@11',22069690,'Mumbai');
+
+ select * from customer;
++---------+---------+-------+----------+--------+
+| cname   | cId     | cpass | cnum     | cadd   |
++---------+---------+-------+----------+--------+
+| Ashish  | Ash@11  | A@11  | 22065074 | Mumbai |
+| Tarun   | Taar@11 | TA@11 | 22072680 | Mumbai |
+| Ajinkya | Ajj@11  | A@11  | 22071459 | Mumbai |
+| Rahil   | Ral@11  | R@11  | 22068959 | Mumbai |
+| Faizan  | Faz@11  | Fi@11 | 22069690 | Mumbai |
++---------+---------+-------+----------+--------+
