@@ -1,0 +1,71 @@
+body{
+
+    background: #2C3E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FD746C, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FD746C, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.box{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    overflow: hidden;
+}
+.box .b{
+    border-radius: 50%;
+    border-left:4px solid ;
+    border-right:4px solid ;
+    border-top:4px solid transparent !important;
+    border-bottom:4px solid transparent !important;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    animation: ro 2s infinite;
+}
+.box .b1{
+    border-color:#4a69bd;
+    width:140px;
+    height:140px;
+    animation-delay:0.2s;
+}
+
+.box .b2{
+    border-color:#f6b93b;
+    width:120px;
+    height:120px;
+    animation-delay:0.4s;
+}
+
+.box .b3{
+    border-color:#2ecc71;
+    width:100px;
+    height:100px;
+    animation-delay:0.6s;
+}
+
+.box .b4{
+    border-color:#34495e;
+    width:80px;
+    height:80px;
+}
+
+.box .b5{
+    position: absolute;
+    top:46%;
+    left:44%;
+}
+@keyframes ro{
+0%{
+    transform:translate(-50%,-50%) rotate(0deg);
+}
+50%{
+    transform:translate(-50%,-50%) rotate(-180deg);
+}
+
+100%{
+    transform:translate(-50%,-50%) rotate(-360deg);
+}
+}
